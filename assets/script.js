@@ -17,20 +17,6 @@ const slides = [
 	}
 ]
 
-// const arrowLeft = document.querySelector(".arrow_left")
-// arrowLeft.addEventListener("click", changeSlide)
-
-// const arrowRight = document.querySelector(".arrow_right")
-// arrowRight.addEventListener("click", changeSlide)
-// function changeSlide(){
-
-// slideNumber -= 1
-// 	alert("change slide "+ slideNumber)
-// }
-
-// let slideNumber = 0
-
-
 const slideImage = document.querySelector(".banner-img")
 const slideTagline = document.querySelector("#banner p")
 const arrowLeft = document.querySelector(".arrow_left")
@@ -75,11 +61,11 @@ function slidesEvent() {
 }
 
 function updateDots() {
-	for (let j = 0; j < dots.length; j++) {
-		if (j === i) {
-			dots[j].classList.add("dot_selected");
+	for (dotNumber = 0; dotNumber < dots.length; dotNumber++) {
+		if (dotNumber === i) {
+			dots[dotNumber].classList.add("dot_selected");
 		} else {
-			dots[j].classList.remove("dot_selected");
+			dots[dotNumber].classList.remove("dot_selected");
 		}
 	}
 }
